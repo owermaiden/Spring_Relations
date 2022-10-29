@@ -2,9 +2,7 @@ package com.cydeo.mentor.entity;
 
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "address")
@@ -12,8 +10,12 @@ import javax.persistence.Table;
 public class Address {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String description;
     private String zipCode;
-//    private State state;
+
+    @ManyToOne
+    @JoinColumn(name = "state_id")
+    private State state;
 }
