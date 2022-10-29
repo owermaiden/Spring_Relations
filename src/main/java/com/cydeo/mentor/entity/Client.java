@@ -2,6 +2,11 @@ package com.cydeo.mentor.entity;
 
 import lombok.Data;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "client")
 @Data
 public class Client extends BaseEntity {
 
@@ -9,5 +14,5 @@ public class Client extends BaseEntity {
     private String phone;
     private String email;
 
-    private Address address;
+//    private Address address;
 }
