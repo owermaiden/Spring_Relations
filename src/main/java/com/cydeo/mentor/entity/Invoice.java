@@ -3,6 +3,8 @@ package com.cydeo.mentor.entity;
 import lombok.Data;
 
 import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import java.time.LocalDate;
 
@@ -16,5 +18,7 @@ public class Invoice extends BaseEntity{
 
     private LocalDate invoiceDate;
 
-//    private Client client;
+    @ManyToOne
+    @JoinColumn(name = "client_id")
+    private Client client;
 }

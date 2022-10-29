@@ -2,9 +2,7 @@ package com.cydeo.mentor.entity;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "category")
@@ -12,6 +10,7 @@ import javax.persistence.Table;
 public class Category {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String categoryName;
     private int tax;
