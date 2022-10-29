@@ -7,8 +7,6 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-@Entity
-@Table(name = "users")
 @Data
 public class User extends BaseEntity{
 
@@ -17,8 +15,6 @@ public class User extends BaseEntity{
     private String password;
     private String email;
 
-    @ManyToOne
-    @JoinColumn(name = "role_id")
     private Role role;
 
 }
