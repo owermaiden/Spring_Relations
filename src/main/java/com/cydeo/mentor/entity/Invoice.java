@@ -8,7 +8,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import java.time.LocalDate;
 
-
+@Entity
+@Table(name = "invoice")
 @Data
 public class Invoice extends BaseEntity{
 

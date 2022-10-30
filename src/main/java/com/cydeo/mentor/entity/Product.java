@@ -8,6 +8,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+@Entity
+@Table(name = "product")
 @Data
 public class Product extends BaseEntity {
 
