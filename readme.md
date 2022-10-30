@@ -14,7 +14,7 @@
     step_1 : establish H2 and Postgres database connection,
     step_2 : create tables via hibernate annotations,
     step_3 : establish entity relations (look into resources/static folder)
-    step_4 : update tables with relations added
-    step_5 : populate tables with Data.sql file...
+             and update tables with relations added
+    step_4 : populate tables with Data.sql file...
 
     Thank you and have a nice time...
