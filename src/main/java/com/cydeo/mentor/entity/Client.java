@@ -15,6 +15,8 @@ public class Client extends BaseEntity {
     private String phone;
     private String email;
 
-
+/*  These fields will be used in STEP-3
     private Address address;
+
+ */
 }
