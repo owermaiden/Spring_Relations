@@ -14,11 +14,15 @@ public class Invoice_Product extends BaseEntity{
     private int quantity;
     private double profit;
 
-/*  These fields will be used in STEP-3
+
+    @ManyToOne
+    @JoinColumn(name = "invoice_id")
     private Invoice invoice;
 
 
+    @ManyToOne
+    @JoinColumn(name = "product_id")
     private Product product;
 
- */
+
 }

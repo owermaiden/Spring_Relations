@@ -18,8 +18,10 @@ public class Invoice extends BaseEntity{
 
     private LocalDate invoiceDate;
 
-/*  These fields will be used in STEP-3
+
+    @ManyToOne
+    @JoinColumn(name = "client_id")
     private Client client;
 
- */
+
 }

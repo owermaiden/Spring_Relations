@@ -16,8 +16,10 @@ public class Product extends BaseEntity {
     private String name;
     private double price;
 
-/*  These fields will be used in STEP-3
+
+    @ManyToOne
+    @JoinColumn(name = "category_id")
     private Category category;
 
- */
+
 }

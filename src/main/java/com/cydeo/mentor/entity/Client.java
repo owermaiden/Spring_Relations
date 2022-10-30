@@ -16,8 +16,9 @@ public class Client extends BaseEntity {
     private String phone;
     private String email;
 
-/*  These fields will be used in STEP-3
+    @ManyToOne
+    @JoinColumn(name = "address_id")
     private Address address;
 
- */
+
 }

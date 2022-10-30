@@ -17,9 +17,11 @@ public class User extends BaseEntity{
     private String password;
     private String email;
 
-    /*  These fields will be used in STEP-3
+
+    @ManyToOne
+    @JoinColumn(name = "role_id")
     private Role role;
 
-     */
+
 
 }
