@@ -14,7 +14,7 @@ public class Product extends BaseEntity {
     private String name;
     private double price;
 
-/*  These fields will be used in STEP-3
+/*  This field will be used in STEP-3
     private Category category;
 
  */

@@ -17,7 +17,7 @@ public class Invoice extends BaseEntity{
 
     private LocalDate invoiceDate;
 
-/*  These fields will be used in STEP-3
+/*  This field will be used in STEP-3
     private Client client;
 
  */

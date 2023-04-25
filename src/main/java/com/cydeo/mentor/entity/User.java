@@ -15,7 +15,7 @@ public class User extends BaseEntity{
     private String password;
     private String email;
 
-    /*  These fields will be used in STEP-3
+    /*  This field will be used in STEP-3
     private Role role;
 
      */

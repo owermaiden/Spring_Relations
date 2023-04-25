@@ -12,7 +12,7 @@ public class Address {
     private String description;
     private String zipCode;
 
-    /*  These fields will be used in STEP-3
+    /*  This field will be used in STEP-3
     private State state;
 
      */

@@ -14,9 +14,8 @@ public class Invoice_Product extends BaseEntity{
     private double profit;
 
 /*  These fields will be used in STEP-3
+
     private Invoice invoice;
-
-
     private Product product;
 
  */
